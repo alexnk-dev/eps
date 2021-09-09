@@ -1,5 +1,7 @@
 const menuBtn = document.querySelector(".burger");
 const nav = document.querySelector(".nav");
+const navLink = document.querySelectorAll(".nav__link");
+
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {

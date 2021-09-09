@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Эпсилонтэк</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -51,23 +55,80 @@
     <main class="main">
       <div class="main__container">
         <section class="aboutus">
-        <div class="left">
-        <h1 class="main__header">Инжиниринговая компания полного цикла</h1>
-        <p class="main__content">
-          ООО "Эпсилонтэк" - инжиниринговая компания полного цикла. Проектируем
-          и строим производства, поставляем оборудование, помогаем получить
-          финансирование, обучаем персонал.
-        </p>
-        <p class="main__content">
-          ООО "Эпсилонтэк" - инжиниринговая компания полного цикла. Проектируем
-          и строим производства, поставляем оборудование, помогаем получить
-          финансирование, обучаем персонал.
-        </p>
-
-        </div>
-        <div class="right"><img class="aboutus__image" src="./assets/images/st1.jpg" alt="st1"></div>
+          <div class="left">
+            <h1 class="h1">Инжиниринговая компания полного цикла</h1>
+            <p class="main__content">
+              ООО "Эпсилонтэк" - инжиниринговая компания полного цикла.
+              Проектируем и строим производства, поставляем оборудование,
+              помогаем получить финансирование, обучаем персонал.
+            </p>
+            <div class="btns">
+              <a
+                href="./pages/services/services.html"
+                class="btn--large btn--light"
+              >
+                Наши услуги
+              </a>
+              <a
+                href="./pages/services/services.html"
+                class="btn--large btn--100"
+              >
+                Каталог оборудования
+              </a>
+            </div>
+            <p class="main__content">
+              ООО "Эпсилонтэк" - инжиниринговая компания полного цикла.
+              Проектируем и строим производства, поставляем оборудование,
+              помогаем получить финансирование, обучаем персонал.
+            </p>
+          </div>
+          <div class="right">
+            <img
+              class="aboutus__image"
+              src="./assets/images/st1.jpg"
+              alt="st1"
+            />
+          </div>
+        </section>
+        <section class="eq">
+          <h1 class="h1 eq-h1">Инжиниринговая компания полного цикла</h1>
+          <div class="eq-container">
+            <div class="eq-left">
+              <img
+                class="aboutus__image"
+                src="./assets/images/st1.jpg"
+                alt="st1"
+              />
+            </div>
+            <div class="eq-right">
+              <p class="main__content">
+                ООО "Эпсилонтэк" - инжиниринговая компания полного цикла.
+                Проектируем и строим производства, поставляем оборудование,
+                помогаем получить финансирование, обучаем персонал.
+              </p>
+              <div class="btns">
+                <a
+                  href="./pages/services/services.html"
+                  class="btn--large btn--light"
+                >
+                  Наши услуги
+                </a>
+                <a
+                  href="./pages/services/services.html"
+                  class="btn--large btn--100"
+                >
+                  Каталог оборудования
+                </a>
+              </div>
+              <p class="main__content">
+                ООО "Эпсилонтэк" - инжиниринговая компания полного цикла.
+                Проектируем и строим производства, поставляем оборудование,
+                помогаем получить финансирование, обучаем персонал.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
-      </section>
     </main>
     <!-- Main end-->
 
@@ -83,27 +144,37 @@
             получить финансирование, обучаем персонал.
           </p>
           <!-- Footer about social-->
-          <div class="footer-about__social">
-            <span class="fab fa-facebook-f"></span>
-            <span class="fab fa-twitter"></span>
-            <span class="fab fa-instagram"></span>
-            <span class="fab fa-youtube"></span>
+          <div class="social">
+            <a class="social__link" href="#">
+              <i class="social__icon fa fa-facebook"></i>
+            </a>
+            <a class="social__link" href="#">
+              <i class="social__icon fa fa-twitter"></i>
+            </a>
+            <a class="social__link" href="#">
+              <i class="social__icon fa fa-instagram"></i>
+            </a>
+            <a class="social__link" href="#">
+              <i class="social__icon fa fa-youtube"></i>
+            </a>
           </div>
         </div>
         <!-- Footer contacts-->
         <div class="footer__contacts">
           <h2 class="footer__header">Контакты</h2>
-          <div class="footer-contacts__phone">
-            <span class="fas fa-phone-alt"></span>
-            <span class="text">+7(495)-XXX-XX-XX</span>
-          </div>
+
+          <a class="footer__phone" href="tel:+7495XXXXXXX">
+            +7(495)-
+            <span class="phone__number">XXX-XX-XX</span>
+          </a>
+
           <div class="footer-contacts__adress">
-            <span class="fas fa-map-marker-alt"></span>
             <span class="text">г. Москва, Варшавское ш., д. 132 стр. 8</span>
           </div>
           <div class="footer-contacts__email">
-            <span class="fas fa-envelope"></span>
-            <a class="mailto" href="mailto:someone@yoursite.com">info@epsilontek.ru</a>
+            <a class="mailto" href="mailto:someone@yoursite.com">
+              info@epsilontek.ru
+            </a>
           </div>
         </div>
         <!-- Footer links-->
@@ -132,7 +203,9 @@
               <div class="text">Текст сообщения *</div>
               <textarea rows="2" cols="25" required></textarea>
             </div>
-            <button class="btn__primary" type="submit">Отправить</button>
+            <button class="btn--darker btn--footer btn" type="submit">
+              Отправить
+            </button>
           </form>
         </div>
       </div>

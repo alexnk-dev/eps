@@ -133,7 +133,7 @@ Typography
 
 .nav__link {
   font-family: var(--ff100);
-  font-size: var(--fs48);
+  font-size: var(--fs32);
   letter-spacing: 0.7px;
 }
 

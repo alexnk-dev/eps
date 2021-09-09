@@ -103,9 +103,20 @@ Typography
   max-width: 30ch;
 }
 
+.h2 {
+  font-family: var(--ff100);
+  font-size: var(--fs16);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  max-width: 30ch;
+}
+
 @media screen and (min-width: 768px) {
   .h1 {
     font-size: var(--fs40);
+  }
+  .h2 {
+    font-size: var(--fs32);
   }
 }
 
@@ -291,7 +302,13 @@ Layout
 
 .eq-h1 {
   max-width: none;
-  padding: 24px;
+  padding: 1.5rem;
+}
+
+.eq-h2 {
+  max-width: none;
+  padding: 1.5rem;
+  color: var(--clr-dp400);
 }
 
 .eq-left,

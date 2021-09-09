@@ -401,12 +401,16 @@ Components
   margin: 1rem 5px;
 }
 
-@media screen and (min-width: 768px) {
-}
-
 .btn::first-letter,
 .btn--large::first-letter {
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--large {
+    max-width: 40%;
+    display: inline-block;
+  }
 }
 
 .btn--100 {

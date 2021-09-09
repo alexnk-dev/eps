@@ -174,6 +174,7 @@ Layout
 }
 
 .logo {
+  margin-left: 1rem;
   margin-right: auto;
 }
 
@@ -387,6 +388,10 @@ Components
 ================= */
 
 /* buttons */
+.btn,
+.btn--large {
+  border-radius: 2px;
+}
 
 .btn {
   padding: 0.5em 3em;
@@ -428,25 +433,28 @@ Components
 }
 
 .btn--100:hover {
-  color: var(--clr-dp100);
+  color: var(--clr-bw100);
   background: var(--clr-dp200);
+  border: 2px solid var(--clr-dp200);
 }
 
 .btn--light {
   color: var(--clr-bw100);
   background: var(--clr-dp200);
-  border: 2px solid var(--clr-bw900);
+  border: 2px solid var(--clr-dp200);
 }
 
 .btn--light:hover {
-  background: var(--clr-dp100);
-  color: var(--clr-bw900);
+  background: var(--clr-bw100);
+  color: var(--clr-dp400);
+  border: 2px solid var(--clr-dp400);
 }
 
 .btn--dark {
   color: var(--clr-bw100);
   background: var(--clr-dp200);
-  border: 2px solid var(--clr-bw900);
+  border: none;
+  /* border: 2px solid var(--clr-bw900); */
 }
 
 .btn--dark:hover {

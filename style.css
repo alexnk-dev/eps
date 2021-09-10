@@ -111,12 +111,23 @@ Typography
   max-width: 30ch;
 }
 
+.h3 {
+  font-family: var(--ff100);
+  font-size: var(--fs16);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  max-width: 30ch;
+}
+
 @media screen and (min-width: 768px) {
   .h1 {
     font-size: var(--fs40);
   }
   .h2 {
     font-size: var(--fs32);
+  }
+  .h3 {
+    font-size: var(--fs24);
   }
 }
 

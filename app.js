@@ -20,6 +20,10 @@ menuBtn.addEventListener("click", () => {
 for (let i = 0; i < more.length; i++) {
   more[i].addEventListener("click", () => {
     more[i].classList.toggle("btn-more--active");
-    more[i].parentNode.classList.toggle("card--active");
+    console.log(more[i].previousSibling.previousSibling);
+    more[i].previousSibling.previousSibling.classList.toggle("card__content");
+    more[i].previousSibling.previousSibling.classList.toggle(
+      "card__content--active"
+    );
   });
 }

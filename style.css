@@ -368,9 +368,6 @@ Layout
   border-right: 20px solid var(--clr-dp100);
 }
 
-.card--active {
-}
-
 .card__icon {
   margin-bottom: 2em;
 }
@@ -379,6 +376,11 @@ Layout
   position: relative;
   height: 15rem;
   overflow: hidden;
+}
+
+.card__content--active {
+  height: auto;
+  overflow: visible;
 }
 
 .card__content::before {

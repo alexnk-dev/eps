@@ -411,11 +411,11 @@ Layout
 }
 
 .btn-more::before {
-  content: "Больше";
+  content: "Подробнее";
 }
 
 .btn-more--active::before {
-  content: "Меньше";
+  content: "Свернуть";
 }
 
 /* Footer */

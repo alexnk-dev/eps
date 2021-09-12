@@ -425,8 +425,7 @@ Layout
 
 /* Contacts page */
 .map {
-  width: 80%;
-  margin: 0 auto;
+  margin: 2em auto;
   border-radius: 5px;
   filter: grayscale(70%);
 }

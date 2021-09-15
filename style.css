@@ -115,7 +115,7 @@ Typography
   font-family: var(--ff100);
   font-size: var(--fs16);
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 0.7em;
   max-width: 30ch;
 }
 

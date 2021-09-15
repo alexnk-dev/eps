@@ -1,0 +1,82 @@
+@use "./font-face" as *;
+
+h1,
+.h1,
+.wildpark__header {
+  font-family: Merriweather;
+  font-size: 84px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+h1,
+.h1 {
+  visibility: hidden;
+  position: absolute;
+  top: -100%;
+}
+
+h2,
+.h2 {
+  font-family: Merriweather;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+
+h3,
+.h3 {
+  font-family: Rubik;
+  font-size: 22px;
+  letter-spacing: 2.53px;
+}
+
+h4,
+.h4 {
+  font-family: Merriweather;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+
+button,
+.button {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+body,
+.body {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+}
+a,
+link {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+}
+@mixin Subscription {
+  font-family: Rubik;
+  font-size: 16px;
+  line-height: 1.45;
+}

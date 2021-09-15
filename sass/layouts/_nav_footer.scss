@@ -1,0 +1,21 @@
+.c-nav-footer {
+  margin-left: 5.875em;
+  &__heading {
+    margin-bottom: 2.5em;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin-bottom: 2em;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--clr-fnt-z-ftrtext);
+  }
+}

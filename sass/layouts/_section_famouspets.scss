@@ -1,0 +1,39 @@
+// Famous pets section
+
+.famouspets__container {
+  display: flex;
+}
+
+.famouspets__body {
+  padding-top: 13.5625rem;
+}
+.famouspets__subheader {
+  margin-bottom: 3.125rem;
+}
+
+.famouspets__header {
+  position: relative;
+}
+
+.famouspets__header::before {
+  content: url(./assets/icons/slide_left.svg);
+  position: absolute;
+  top: 110%;
+}
+
+.famouspets__header::after {
+  content: url(./assets/icons/slide_right.svg);
+  position: absolute;
+  top: 110%;
+  left: 25%;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 40px;
+}
+
+.famouspet__image {
+  border-radius: 5px;
+}

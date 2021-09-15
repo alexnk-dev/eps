@@ -1,0 +1,33 @@
+.button {
+  padding: 1.25em 4.6875em;
+  border-radius: 5px;
+}
+
+.button::first-letter {
+  text-transform: uppercase;
+}
+
+.button--dark {
+  background-color: var(--clr-bg-z-dark-blue);
+  color: var(--clr-bg-z-white);
+  border: 2px solid var(--clr-bg-z-white);
+  margin-right: 3.875em;
+}
+
+.button--light {
+  background-color: var(--clr-bg-z-white);
+  color: var(--clr-bg-z-dark-blue);
+  border: 2px solid var(--clr-bg-z-dark-blue);
+}
+
+.button:hover {
+  background-color: var(--clr-bg-z-blue);
+}
+
+.button--light:hover {
+  color: var(--clr-bg-z-white);
+}
+
+.c-footer-support__button {
+  background-color: transparent;
+}

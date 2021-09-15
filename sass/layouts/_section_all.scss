@@ -1,0 +1,26 @@
+.wildpark,
+.zooworks,
+.payments,
+.zoogeography {
+  background-color: var(--clr-bg-z-white);
+}
+.famouspets {
+  background-color: var(--clr-bg-z-wight-blue);
+}
+.testimonials {
+  background-color: var(--clr-bg-z-dark-blue);
+  color: var(--clr-fnt-z-ftrtext);
+}
+
+.zooworks,
+.famouspets,
+.payments,
+.testimonials,
+.zoogeography {
+  padding: 6.25em 0;
+}
+
+.wildpark__container,
+.zooworks__container {
+  display: flex;
+}

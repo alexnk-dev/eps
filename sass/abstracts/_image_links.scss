@@ -1,0 +1,14 @@
+//set base path to background images and icons
+$images: "./assets/images/";
+$icons: "./assets/icons/";
+
+$lnk: (
+  img: (
+    panda: url(#{$images}panda.jpg),
+    banda: url(#{$images}banda.jpg),
+  ),
+  icon: (
+    tigra: url(#{$icons}tigra.jpg),
+    wanda: url(#{$icons}wanda.jpg),
+  ),
+);

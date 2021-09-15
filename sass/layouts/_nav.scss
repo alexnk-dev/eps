@@ -1,0 +1,43 @@
+// Sass
+.c-nav {
+  margin-left: 5.875em;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+
+  &__link {
+    display: inline-grid;
+    margin-right: 8.125rem;
+    text-decoration: none;
+    color: var(--clr-fnt-z-dark-blue);
+  }
+
+  // fix for layout shift
+  &__link::after {
+    // content: attr(data-text);
+    content: attr(data-text) / "";
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: bold;
+  }
+
+  &__link:hover,
+  &__link:active,
+  &__link:focus {
+    font-weight: bold;
+  }
+
+  &__link--active {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--clr-fnt-z-dark-blue);
+  }
+
+  &__link--active:hover,
+  &__link--active:active,
+  &__link--active:focus {
+    cursor: default;
+  }
+}

@@ -1,0 +1,17 @@
+// Sass
+@mixin create($block, $el1, $el2, $el3) {
+  .#{$block} {
+    &__#{$el1} {
+      display: flex;
+    }
+
+    &__#{$el2} {
+      margin: 0 20px;
+      list-style-type: none;
+    }
+
+    &__#{$el3} {
+      text-decoration: none;
+    }
+  }
+}

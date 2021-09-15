@@ -1,0 +1,52 @@
+.zoogeography-container {
+  display: flex;
+}
+
+.zoogeography__body {
+  max-width: 150px;
+}
+.zoogeography__marker-map {
+  width: 1217px;
+  height: 699px;
+  background-image: url(./assets/icons/world_map.svg);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  display: block;
+  position: relative;
+}
+.svg-eagle {
+  content: url(./assets/icons/marker_eagle.svg);
+  position: absolute;
+  display: inline-block;
+  width: 96px;
+  height: 124px;
+  top: 204px; //214-10px
+  left: 127px;
+}
+
+.svg-alligator {
+  content: url(./assets/icons/marker_alligator.svg);
+  position: absolute;
+  width: 69px;
+  height: 89px;
+  top: 240px;
+  left: 273px;
+}
+
+.svg-gorilla {
+  content: url(./assets/icons/marker_gorilla.svg);
+  position: absolute;
+  width: 69px;
+  height: 89px;
+  top: 363px;
+  left: 590px;
+}
+
+.svg-panda {
+  content: url(./assets/icons/marker_panda.svg);
+  position: absolute;
+  width: 69px;
+  height: 89px;
+  top: 194px;
+  left: 908px;
+}

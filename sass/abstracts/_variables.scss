@@ -1,0 +1,15 @@
+@use "./colors" as *;
+@use "./image_links" as *;
+:root {
+  @each $el, $names in $colors {
+    @each $name, $value in $names {
+      --clr-#{$el}-#{$name}: #{$value};
+    }
+  }
+
+  @each $e, $n in $lnk {
+    @each $n, $v in $n {
+      --bg-#{$e}-#{$n}: #{$v};
+    }
+  }
+}

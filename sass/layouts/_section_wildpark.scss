@@ -1,0 +1,16 @@
+.wildpark__content,
+.zooworks__content {
+  // width: 716px;
+  width: 50%;
+}
+
+.wildpark__content--right,
+.zooworks__content--right {
+  width: 50%;
+  margin-left: 1.5625em;
+}
+
+.wildpark__image {
+  display: block;
+  max-width: 100%;
+}

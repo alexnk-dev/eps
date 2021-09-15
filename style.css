@@ -22,6 +22,11 @@ Fonts
   src: url(./assets/fonts/Open_Sans/OpenSans-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url(./assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf);
+}
+
 /* =================
 Variables
 ================= */
@@ -337,6 +342,11 @@ Layout
 
 .right-left {
   order: 1;
+}
+
+.epsilontek {
+  color: var(--clr-np100);
+  font-weight: 900;
 }
 
 .btns-right {

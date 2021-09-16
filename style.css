@@ -203,6 +203,7 @@ Layout
 .logo {
   margin-left: 1rem;
   margin-right: auto;
+  animation: slideLeft 0.5s ease-in-out forwards;
 }
 
 /* navigation */
@@ -231,6 +232,26 @@ Layout
 .nav__link {
   color: black;
   text-decoration: none;
+}
+
+.nav__item--about,
+.nav__item--services,
+.nav__item--equipment,
+.nav__item--contacts {
+  animation: slideRight 0.5s ease-in-out forwards;
+}
+
+.nav__item--about {
+  animation-delay: calc(0.2s * 1);
+}
+.nav__item--services {
+  animation-delay: calc(0.2s * 2);
+}
+.nav__item--equipment {
+  animation-delay: calc(0.2s * 3);
+}
+.nav__item--contacts {
+  animation-delay: calc(0.2s * 4);
 }
 
 .burger {
@@ -278,6 +299,28 @@ Layout
 }
 .burger.open .burger__bar::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {

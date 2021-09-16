@@ -370,6 +370,8 @@ Layout
 
 .left,
 .right,
+.left2,
+.right2,
 .services,
 .contacts {
   padding: 0 3ch;
@@ -580,6 +582,10 @@ Layout
 
 .mailto:hover {
   color: var(--clr-bw100);
+}
+
+.footer__address--nowrap {
+  white-space: nowrap;
 }
 
 .copyright {

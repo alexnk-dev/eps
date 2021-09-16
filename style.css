@@ -89,6 +89,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -303,7 +304,7 @@ Layout
 
 @keyframes slideRight {
   0% {
-    transform: translateX(150px);
+    transform: translateX(750px);
     opacity: 0;
   }
   100% {
@@ -568,6 +569,12 @@ Layout
 
 .mailto:hover {
   color: var(--clr-bw100);
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* =================

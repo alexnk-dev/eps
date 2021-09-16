@@ -238,21 +238,32 @@ Layout
 .nav__item--about,
 .nav__item--services,
 .nav__item--equipment,
+.nav__item--articles,
+.nav__item--partners,
 .nav__item--contacts {
   animation: slideRight 0.5s ease-in-out forwards;
 }
 
 .nav__item--about {
-  animation-delay: calc(0.2s * 1);
+  animation-delay: calc(0.1s * 1);
 }
 .nav__item--services {
-  animation-delay: calc(0.2s * 2);
+  animation-delay: calc(0.1s * 2);
 }
 .nav__item--equipment {
-  animation-delay: calc(0.2s * 3);
+  animation-delay: calc(0.1s * 3);
 }
+
+.nav__item--articles {
+  animation-delay: calc(0.1s * 4);
+}
+
+.nav__item--partners {
+  animation-delay: calc(0.1s * 5);
+}
+
 .nav__item--contacts {
-  animation-delay: calc(0.2s * 4);
+  animation-delay: calc(0.1s * 6);
 }
 
 .burger {

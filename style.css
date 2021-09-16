@@ -421,6 +421,11 @@ Layout
   flex-wrap: wrap;
 }
 
+.card-services {
+  position: relative;
+  width: 32%;
+}
+
 .card {
   position: relative;
   width: 300px;

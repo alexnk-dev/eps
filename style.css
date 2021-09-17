@@ -365,8 +365,10 @@ Layout
 }
 
 .aboutus__image {
+  border: 1px solid var(--clr-bw900);
   border-radius: 10px;
   margin-bottom: 2rem;
+  min-height: 300px;
 }
 
 .left,

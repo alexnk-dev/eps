@@ -24,28 +24,38 @@
         <a class="logo" href="../../index.html">
           <img
             class="logo"
-            width="109px"
-            height="56px"
+            width="109"
+            height="56"
             src="../../assets/images/logo-epsilontek.png"
             alt="логотип Эпсилонтэк"
           />
         </a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item">
+            <li class="nav__item nav__item--about">
               <a class="nav__link" href="../../index.html">О нас</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--services">
               <a class="nav__link" href="../../pages/services/services.html">
                 Услуги
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--equipment">
               <a class="nav__link" href="../../pages/equipment/equipment.html">
                 Оборудование
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--articles">
+              <a class="nav__link" href="../../pages/articles/articles.html">
+                Статьи
+              </a>
+            </li>
+            <li class="nav__item nav__item--partners">
+              <a class="nav__link" href="../../pages/partners/partners.html">
+                Партнеры
+              </a>
+            </li>
+            <li class="nav__item nav__item--contacts">
               <a class="nav__link" href="../../pages/contacts/contacts.html">
                 Контакты
               </a>
@@ -202,7 +212,12 @@
             </a>
           </div>
           <div class="footer-contacts__adress">
-            <span class="text">г. Москва, Варшавское ш., д. 132 стр. 8</span>
+            <p class="footer__address">
+              г. Москва,
+              <span class="footer__address--nowrap">
+                Варшавское ш., д. 132 стр. 8
+              </span>
+            </p>
           </div>
         </div>
         <!-- Footer links-->
@@ -215,6 +230,12 @@
           <a class="footer__link" href="../../pages/equipment/equipment.html">
             Оборудование
           </a>
+          <a class="footer__link" href="../../pages/articles/articles.html">
+            Статьи
+          </a>
+          <a class="footer__link" href="../../pages/partners/partners.html">
+            Партнеры
+          </a>
           <a class="footer__link" href="../../pages/contacts/contacts.html">
             Контакты
           </a>
@@ -225,7 +246,7 @@
           <form class="footer-message__form" action="#">
             <div class="footer-email">
               <div class="footer-email__email">Ваш еmail адрес*</div>
-              <input type="footer-email__input" required />
+              <input class="footer-email__input" type="email" required />
             </div>
             <div class="msg">
               <div class="text">Текст сообщения *</div>
@@ -238,11 +259,10 @@
         </div>
       </div>
     </footer>
-    <center class="copyright">
+    <div class="copyright">
       <p>Copyright. &copy; 2020-2021. ООО "Эпсилонтэк". Все права защищены.</p>
-    </center>
+    </div>
     <!-- Footer end-->
-    >
-    <script src="../../app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

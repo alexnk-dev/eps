@@ -359,7 +359,8 @@ Layout
 /* Main content, Sections */
 
 .aboutus,
-.eq {
+.eq,
+.services {
   margin-bottom: 2rem;
 }
 

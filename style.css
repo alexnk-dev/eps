@@ -421,9 +421,19 @@ Layout
   flex-wrap: wrap;
 }
 
+.grid__container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
 .card-services {
   position: relative;
-  width: 32%;
+}
+
+.img-service {
+  object-fit: cover;
+  height: 300px;
 }
 
 .card {

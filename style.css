@@ -369,15 +369,17 @@ Layout
   border-radius: 10px;
   margin-bottom: 2rem;
   min-height: 300px;
+  object-fit: cover;
 }
 
 .left,
 .right,
 .left2,
 .right2,
+.partners,
 .services,
 .contacts {
-  padding: 0 3ch;
+  padding: 0 2rem;
 }
 
 .eq-h1 {
@@ -602,14 +604,13 @@ Layout
 }
 
 /* Contacts page */
-.map {
-  margin: 2em auto;
-  border-radius: 5px;
-  filter: grayscale(70%);
+.contacts {
+  margin-bottom: 5em;
 }
 
 .contact-us {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -644,6 +645,16 @@ Layout
   transform: translate(200px, 80px);
 }
 
+@media screen and (min-width: 768px) {
+  .contact-us::before {
+    transform: translate(-480px, -170px);
+  }
+
+  .contact-us::after {
+    transform: translate(470px, 170px);
+  }
+}
+
 .contact-us__container {
   position: relative;
   z-index: 500;
@@ -676,7 +687,7 @@ Layout
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .contact-us__col {
@@ -702,8 +713,8 @@ Layout
   box-shadow: none;
   border: none;
   outline: none;
-  padding: 0 10px;
-  font-size: var(--fs24);
+  padding: 0 0.75em;
+  font-size: var(--fs16);
   z-index: 10;
 }
 
@@ -725,6 +736,7 @@ Layout
 .contact-us__textarea:valid + .contact-us__text {
   top: -35px;
   left: -10px;
+  font-size: var(--fs12);
 }
 
 .line {
@@ -1015,11 +1027,6 @@ Media queries
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  }
-
-  .aboutus__image {
-    height: 100%;
-    object-fit: cover;
   }
 
   .footer__container {

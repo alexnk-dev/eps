@@ -361,7 +361,7 @@ Layout
 .aboutus,
 .eq,
 .services {
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 
 .aboutus__image {
@@ -607,6 +607,48 @@ Layout
 .contacts {
   margin-bottom: 5em;
 }
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__image {
+  margin-bottom: 3em;
+  border-radius: 5px;
+}
+
+.contacts__right {
+  order: 1;
+}
+
+.contacts__left {
+  order: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__container {
+    flex-direction: row;
+  }
+
+  .contacts__left {
+    width: 50%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .contacts__right {
+    width: 50%;
+    order: 2;
+  }
+}
+
+.contacts__phone,
+.contacts__email {
+  color: var(--clr-bw900);
+  text-shadow: 3px 3px 3px var(--clr-dp100);
+}
 
 .contact-us {
   display: flex;
@@ -659,7 +701,7 @@ Layout
   position: relative;
   z-index: 500;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   /* background: var(--clr-dp300); */
   background: rgba(240, 252, 247, 0.1);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);

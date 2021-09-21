@@ -52,8 +52,8 @@ Variables
 
   /* --ff100: "Raleway"; */
   /* --ff100: "Poppins"; */
-  --ff100: '"Montserrat"';
-  --ff200: '"Open Sans"';
+  --ff100: "Montserrat";
+  --ff200: "Open Sans";
 
   /* Font sizes */
   --fs08: 0.5rem;

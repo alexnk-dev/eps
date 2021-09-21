@@ -471,26 +471,27 @@ Layout
   transition: transform 0.5s;
 }
 
-.how-works__list:hover .how-works__item {
-  /* opacity: 0.5; */
+.services--box .how-works__list:hover .how-works__item,
+.services--box .examples__list:hover .examples__item {
+  opacity: 0.2;
 }
 
-.how-works__item:hover {
-  transform: scale(1.1);
-  z-index: 100;
-  background: var(--clr-np200);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  color: var(--clr-bw100);
-  /* opacity: 1; */
-}
-
-.examples__item:hover {
+.services--box .how-works__list:hover .how-works__item:hover {
   transform: scale(1.1);
   z-index: 100;
   background: var(--clr-np100);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   color: var(--clr-bw100);
-  /* opacity: 1; */
+  opacity: 1;
+}
+
+.services--box .examples__list:hover .examples__item:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  background: var(--clr-np200);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  color: var(--clr-bw100);
+  opacity: 1;
 }
 
 .how-works__number {
@@ -500,7 +501,7 @@ Layout
   text-align: right;
   text-shadow: 1px 1px 1px var(--clr-bw900);
   line-height: 30px;
-  background: var(--clr-np200);
+  background: var(--clr-np100);
   color: var(--clr-bw100);
   display: inline-block;
   border-radius: 50%;
@@ -515,7 +516,7 @@ Layout
   text-align: right;
   text-shadow: 1px 1px 1px var(--clr-bw900);
   line-height: 30px;
-  background: var(--clr-np100);
+  background: var(--clr-np200);
   color: var(--clr-bw100);
   display: inline-block;
   border-radius: 50%;
@@ -525,12 +526,12 @@ Layout
 
 .how-works__item:hover span {
   background: var(--clr-bw100);
-  color: var(--clr-dp200);
+  color: var(--clr-dp100);
 }
 
 .examples__item:hover span {
   background: var(--clr-bw100);
-  color: var(--clr-dp100);
+  color: var(--clr-dp200);
 }
 
 .card {

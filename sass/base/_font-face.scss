@@ -1,24 +1,4 @@
 @font-face {
-  font-family: Merriweather;
-  src: local(Merriweather-Bold),
-    // url(/path/to/Merriweather-Bold.woff2) format("woff2"),
-    // url(/path/to/Merriweather-Bold.woff) format("woff"),
-    url(./assets/fonts/Merriweather-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: Rubik;
-  src: local(Rubik-Regular),
-    // url(/path/to/Rubik-Regular.woff2) format("woff2"),
-    //url(/path/to/Rubik-Regular.woff) format("woff"),
-    url(./assets/fonts/Rubik-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
   font-family: Rubik;
   src: local(Rubik-Medium),
     // url(/path/to/Rubik-Medium.woff2) format("woff2"),
@@ -27,4 +7,38 @@
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
+}
+
+/* =================
+Fonts
+================= */
+
+@font-face {
+  font-family: "Montserrat";
+  src: local(Montserrat-Regular),
+    url(./assets/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local(Montserrat-Black),
+    url(./assets/fonts/Montserrat/Montserrat-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local(OpenSans-Regular),
+    url(./assets/fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local(OpenSans-SemiBold),
+    url(./assets/fonts/Open_Sans/OpenSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local(OpenSans-ExtraBold),
+    url(./assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf) format("truetype");
 }

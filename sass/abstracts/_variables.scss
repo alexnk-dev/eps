@@ -1,9 +1,24 @@
 @use "./colors" as *;
+@use "./type" as *;
+@use "./font_size" as *;
 @use "./image_links" as *;
+
 :root {
   @each $el, $names in $colors {
     @each $name, $value in $names {
-      --clr-#{$el}-#{$name}: #{$value};
+      --clr-#{$el}#{$name}: #{$value};
+    }
+  }
+
+  @each $el, $names in $type {
+    @each $name, $value in $names {
+      --#{$el}#{$name}: "#{$value}";
+    }
+  }
+
+  @each $el, $names in $fontsize {
+    @each $name, $value in $names {
+      --#{$el}#{$name}: #{$value};
     }
   }
 

@@ -1,28 +1,18 @@
 $colors: (
-  bg: (
-    z-white: #fcfcfc,
-    z-line: #f0f0f0,
-    z-dark-blue: #080029,
-    z-blue: #0f0049,
-    z-super-light-gray: #d3d3d3,
-    z-dark: #181818,
-    z-light-blue: #609fff,
-    z-wight-blue: #d9e8ff,
-    z-hard-blue: #3888ff,
-    z-active: #150068,
-    z-footer: #0b0b0b,
+  bw: (
+    100: white,
+    900: black,
   ),
-  fnt: (
-    z-dark-blue: #080029,
-    z-dot: #d00000,
-    z-btn: #ffffff,
-    z-black: #0b0b0b,
-    z-h2tag: #626262,
-    z-text: #747474,
-    z-ftrtext: #bcbcbc,
+  np: (
+    100: #34ce9c,
+    200: #639c84,
+    300: #effdf6,
+    400: #d9eddf,
   ),
-  logo: (
-    z-black: #0b0b0b,
-    z-white: #fcfcfc,
+  dp: (
+    100: #34ce9c,
+    200: #639c84,
+    300: #f0fcf7,
+    400: #386c5f,
   ),
 );

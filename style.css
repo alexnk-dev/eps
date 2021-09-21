@@ -52,8 +52,8 @@ Variables
 
   /* --ff100: "Raleway"; */
   /* --ff100: "Poppins"; */
-  --ff100: "Montserrat";
-  --ff200: "Open Sans";
+  --ff100: '"Montserrat"';
+  --ff200: '"Open Sans"';
 
   /* Font sizes */
   --fs08: 0.5rem;
@@ -648,6 +648,11 @@ Layout
 .contacts__email {
   color: var(--clr-bw900);
   text-shadow: 3px 3px 3px var(--clr-dp100);
+}
+
+.contacts__phone,
+.contacts__email {
+  font-size: var(--fs24);
 }
 
 .contact-us {

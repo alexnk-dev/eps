@@ -883,13 +883,16 @@ Layout
   font-weight: 900;
   text-decoration: none;
   color: black;
-  box-shadow: -6px -3px 7px black;
+  /* box-shadow: -6px -3px 7px black; */
   display: block;
   margin-bottom: 1em;
+  text-shadow: -3px -3px 2px var(--clr-dp100);
+  /* , 5px 5px 3px var(--clr-dp100) */
 }
 
 .footer__phone:hover {
-  box-shadow: 6px 3px 7px black;
+  /* box-shadow: 6px 3px 7px black; */
+  text-shadow: 3px 1px 3px var(--clr-bw100);
 }
 
 .phone__number {
@@ -906,10 +909,13 @@ Layout
   font-family: var(--ff100);
 
   font-weight: 900;
+  /* text-shadow: 3px 1px 3px var(--clr-dp100); */
+  text-shadow: -3px -3px 2px var(--clr-dp100);
 }
 
 .mailto:hover {
-  color: var(--clr-bw100);
+  /* color: var(--clr-bw100); */
+  text-shadow: 3px 1px 3px var(--clr-bw100);
 }
 
 .footer__address--nowrap {

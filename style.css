@@ -656,6 +656,15 @@ Layout
   font-size: var(--fs24);
 }
 
+.company__details {
+  display: flex;
+}
+
+.ogrn,
+.inn {
+  margin-right: 5em;
+}
+
 .contact-us {
   display: flex;
   flex-direction: column;

@@ -133,7 +133,7 @@ Typography
     font-size: var(--fs32);
   }
   .h3 {
-    font-size: var(--fs24);
+    font-size: var(--fs20);
   }
 }
 
@@ -453,6 +453,8 @@ Layout
 .img-service {
   object-fit: cover;
   /* height: 300px; */
+  filter: contrast(0.7) sepia(0.86) hue-rotate(97deg) brightness(0.7);
+  /* filter: contrast(0.7) grayscale(0.99) hue-rotate(97deg) brightness(0.7); */
 }
 
 .how-works__list,
@@ -915,7 +917,7 @@ Layout
 
 .mailto:hover {
   /* color: var(--clr-bw100); */
-  text-shadow: 3px 1px 3px var(--clr-bw100);
+  text-shadow: -3px -3px 2px var(--clr-bw100);
 }
 
 .footer__address--nowrap {

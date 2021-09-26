@@ -338,13 +338,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: Rubik;
-  src: local(Rubik-Medium), url(./assets/fonts/Rubik-Medium.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-}
 /* =================
 Fonts
 ================= */
@@ -521,7 +514,7 @@ Layout
   .header__container,
 .main__container,
 .footer__container {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 1rem auto;
   }
 
@@ -1117,6 +1110,74 @@ Layout
   /* height: 300px; */
   filter: contrast(0.7) sepia(0.86) hue-rotate(97deg) brightness(0.7);
   /* filter: contrast(0.7) grayscale(0.99) hue-rotate(97deg) brightness(0.7); */
+}
+
+.img-service:hover {
+  filter: none;
+}
+
+.img-service2 {
+  object-fit: cover;
+  /* height: 300px; */
+  filter: contrast(0.7) grayscale(1) hue-rotate(97deg) brightness(0.7);
+}
+
+.img-service2:hover {
+  filter: none;
+}
+
+.grid__container3 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+}
+
+@media screen and (min-width: 768px) {
+  .grid__container3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid__container3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.card-services3 {
+  position: relative;
+  background: var(--clr-bw900);
+  display: flex;
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-box {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 5px;
+  background: rgba(151, 161, 158, 0.4);
+  backdrop-filter: blur(5px);
+  height: calc(80% - 10px);
+  width: calc(100% - 10px);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img-service3 {
+  z-index: 0;
+}
+
+.z {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 30;
+  color: black;
 }
 
 .how-works__list,

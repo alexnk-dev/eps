@@ -1,17 +1,15 @@
+/* Header */
 .header {
-  display: flex;
-  width: 1800px;
-  margin: 1.5625em 3.75em 3.4375em;
-  border: 2px solid #f0f0f0;
+  background: var(--clr-bw100);
+  // border-bottom: 1px solid var(--clr-bw900);
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.icon__userpic {
-  margin-left: auto;
-  margin-right: 5.75em;
-}
-
-.c-logo {
-  visibility: hidden;
-  margin-left: 1.25em;
-  margin-right: 1.25em;
+.logo {
+  margin-left: 1rem;
+  margin-right: auto;
+  animation: slideLeft 0.5s ease-in-out forwards;
 }

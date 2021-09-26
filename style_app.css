@@ -1,0 +1,37 @@
+/* =================
+Components
+================= */
+
+/* =================
+Media queries
+================= */
+
+@media screen and (min-width: 768px) {
+  .aboutus,
+  .eq-container {
+    display: flex;
+  }
+
+  /* .left,
+  .right {
+    max-width: 50%;
+  } */
+  .left {
+    width: 60%;
+  }
+  .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .eq-right {
+    width: 60%;
+  }
+  .eq-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}

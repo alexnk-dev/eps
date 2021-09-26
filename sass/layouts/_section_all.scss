@@ -1,26 +1,25 @@
-.wildpark,
-.zooworks,
-.payments,
-.zoogeography {
-  background-color: var(--clr-bg-z-white);
-}
-.famouspets {
-  background-color: var(--clr-bg-z-wight-blue);
-}
-.testimonials {
-  background-color: var(--clr-bg-z-dark-blue);
-  color: var(--clr-fnt-z-ftrtext);
+/* Main content, Sections */
+
+.aboutus,
+.eq,
+.services {
+  margin-bottom: 8rem;
 }
 
-.zooworks,
-.famouspets,
-.payments,
-.testimonials,
-.zoogeography {
-  padding: 6.25em 0;
+.aboutus__image {
+  border: 1px solid var(--clr-bw900);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  min-height: 300px;
+  object-fit: cover;
 }
 
-.wildpark__container,
-.zooworks__container {
-  display: flex;
+.left,
+.right,
+.left2,
+.right2,
+.partners,
+.services,
+.contacts {
+  padding: 0 2rem;
 }

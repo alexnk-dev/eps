@@ -1,0 +1,26 @@
+.social__link {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: transparent;
+  /* background: var(--clr-np100); */
+  border: 1px solid var(--clr-bw900);
+  border-radius: 5px;
+  margin-right: 1em;
+  position: relative;
+}
+
+.social__link:hover {
+  background: var(--clr-dp400);
+  border: 1px solid var(--clr-bw100);
+}
+
+.social__icon {
+  color: var(--clr-bw900);
+  padding: 10px 12px;
+  font-size: var(--fs20);
+}
+
+.social__icon:hover {
+  color: var(--clr-bw100);
+}

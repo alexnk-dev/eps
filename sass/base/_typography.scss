@@ -57,6 +57,24 @@ Typography
   letter-spacing: 0.7px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: var(--fs12);
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .nav__link {
+    font-size: var(--fs14);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    font-size: var(--fs16);
+  }
+}
+
 .footer__header {
   font-family: var(--ff100);
   font-weight: 700;

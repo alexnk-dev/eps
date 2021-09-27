@@ -379,6 +379,7 @@ Fonts
   --fs16: 1rem;
   --fs20: 1.25rem;
   --fs24: 1.5rem;
+  --fs28: 1.75rem;
   --fs32: 2rem;
   --fs40: 2.5rem;
   --fs48: 3rem;
@@ -425,7 +426,7 @@ Typography
 ================= */
 .h1 {
   font-family: var(--ff100);
-  font-size: var(--fs32);
+  font-size: var(--fs28);
   font-weight: 700;
   margin-bottom: 3rem;
   max-width: 30ch;

@@ -1497,8 +1497,11 @@ Layout
   .equipment--left {
     width: 40%;
     display: flex;
-    justify-content: start;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .equipment__image {
+    margin-bottom: 0em;
   }
   .equipment--right {
     width: 60%;
@@ -1506,6 +1509,9 @@ Layout
     flex-direction: column;
     justify-content: space-between;
     padding: 0 2em;
+  }
+  .equipment__btn {
+    margin-bottom: 0;
   }
 }
 

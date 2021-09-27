@@ -377,9 +377,13 @@ Fonts
   --fs8: 0.5rem;
   --fs12: 0.75rem;
   --fs16: 1rem;
+  --fs18: 1.125rem;
   --fs20: 1.25rem;
+  --fs22: 1.375rem;
   --fs24: 1.5rem;
+  --fs26: 1.625rem;
   --fs28: 1.75rem;
+  --fs30: 1.875rem;
   --fs32: 2rem;
   --fs40: 2.5rem;
   --fs48: 3rem;
@@ -426,7 +430,7 @@ Typography
 ================= */
 .h1 {
   font-family: var(--ff100);
-  font-size: var(--fs28);
+  font-size: var(--fs24);
   font-weight: 700;
   margin-bottom: 3rem;
   max-width: 30ch;
@@ -434,7 +438,7 @@ Typography
 
 .h2 {
   font-family: var(--ff100);
-  font-size: var(--fs24);
+  font-size: var(--fs22);
   font-weight: 700;
   margin-bottom: 3rem;
   max-width: 40ch;
@@ -1480,10 +1484,10 @@ Layout
 .equipment--container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .equipment__image {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 @media screen and (min-width: 1200px) {

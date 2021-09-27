@@ -6,7 +6,7 @@ Typography
 
 .h1 {
   font-family: var(--ff100);
-  font-size: var(--fs24);
+  font-size: var(--fs32);
   font-weight: 700;
   margin-bottom: 3rem;
   max-width: 30ch;
@@ -14,15 +14,15 @@ Typography
 
 .h2 {
   font-family: var(--ff100);
-  font-size: var(--fs16);
+  font-size: var(--fs24);
   font-weight: 700;
   margin-bottom: 3rem;
-  max-width: 30ch;
+  max-width: 40ch;
 }
 
 .h3 {
   font-family: var(--ff100);
-  font-size: var(--fs16);
+  font-size: var(--fs20);
   font-weight: 700;
   margin-bottom: 0.7em;
   max-width: 30ch;

@@ -425,7 +425,7 @@ Typography
 ================= */
 .h1 {
   font-family: var(--ff100);
-  font-size: var(--fs24);
+  font-size: var(--fs32);
   font-weight: 700;
   margin-bottom: 3rem;
   max-width: 30ch;
@@ -433,15 +433,15 @@ Typography
 
 .h2 {
   font-family: var(--ff100);
-  font-size: var(--fs16);
+  font-size: var(--fs24);
   font-weight: 700;
   margin-bottom: 3rem;
-  max-width: 30ch;
+  max-width: 40ch;
 }
 
 .h3 {
   font-family: var(--ff100);
-  font-size: var(--fs16);
+  font-size: var(--fs20);
   font-weight: 700;
   margin-bottom: 0.7em;
   max-width: 30ch;
@@ -709,11 +709,6 @@ Layout
   padding-left: 1.5rem;
   padding-bottom: 1em;
 } */
-.eq-left,
-.eq-right {
-  padding: 0 3ch;
-}
-
 .left-right {
   order: 2;
 }
@@ -784,8 +779,9 @@ Layout
 .right,
 .left2,
 .right2,
-.partners,
 .services,
+.equipment,
+.partners,
 .contacts {
   padding: 0 2rem;
 }
@@ -1478,6 +1474,34 @@ Layout
 .contact-us__textarea:focus ~ .line,
 .contact-us__textarea:valid ~ .line {
   height: 100%;
+}
+
+.equipment--container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.equipment__image {
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1200px) {
+  .equipment--container {
+    flex-direction: row;
+  }
+  .equipment--left {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .equipment--right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

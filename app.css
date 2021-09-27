@@ -805,8 +805,6 @@ Layout
   height: auto;
 }
 .footer__container {
-  /* margin: 2rem auto; */
-  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
 }
@@ -835,27 +833,15 @@ Layout
   font-weight: 900;
   text-decoration: none;
   color: black;
-  /* box-shadow: -6px -3px 7px black; */
   display: block;
   margin-bottom: 1em;
   text-shadow: -3px -3px 2px var(--clr-dp100);
-  /* , 5px 5px 3px var(--clr-dp100) */
 }
 .footer__phone:hover {
-  /* box-shadow: 6px 3px 7px black; */
-  text-shadow: 3px 1px 3px var(--clr-bw100);
+  text-shadow: -3px -3px 2px var(--clr-bw100);
 }
 .footer__number {
   white-space: nowrap;
-}
-
-/* Footer */
-.footer-about__content {
-  margin-bottom: 1.5em;
-}
-
-.footer-contacts__email {
-  margin-bottom: 1em;
 }
 
 .mailto {
@@ -863,13 +849,19 @@ Layout
   font-size: var(--fs20);
   font-family: var(--ff100);
   font-weight: 900;
-  /* text-shadow: 3px 1px 3px var(--clr-dp100); */
   text-shadow: -3px -3px 2px var(--clr-dp100);
 }
 
 .mailto:hover {
-  /* color: var(--clr-bw100); */
   text-shadow: -3px -3px 2px var(--clr-bw100);
+}
+
+.footer-about__content {
+  margin-bottom: 1.5em;
+}
+
+.footer-contacts__email {
+  margin-bottom: 1em;
 }
 
 .footer__address--nowrap {
@@ -880,9 +872,16 @@ Layout
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1054,13 +1053,26 @@ Layout
   height: 40px;
   display: inline-block;
   background: transparent;
-  /* background: var(--clr-np100); */
   border: 1px solid var(--clr-bw900);
   border-radius: 5px;
   margin-right: 1em;
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .social__link {
+    width: 30px;
+    height: 30px;
+    margin: 0.1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social__link {
+    width: 40px;
+    height: 40px;
+    margin: 0.1em;
+  }
+}
 .social__link:hover {
   background: var(--clr-dp400);
   border: 1px solid var(--clr-bw100);

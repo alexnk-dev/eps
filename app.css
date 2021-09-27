@@ -786,6 +786,7 @@ Layout
 .right2,
 .services,
 .equipment,
+.item,
 .partners,
 .contacts {
   padding: 0 2rem;
@@ -1493,27 +1494,92 @@ Layout
 }
 
 @media screen and (min-width: 1200px) {
-  .equipment--container {
+  .item--container {
     flex-direction: row;
   }
-  .equipment--left {
+  .item--left {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: end;
   }
-  .equipment__image {
+  .item__image {
     margin-bottom: 0em;
   }
-  .equipment--right {
+  .item--right {
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 2em;
   }
-  .equipment__btn {
+  .item__btn {
     margin-bottom: 0;
+  }
+}
+.item--container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+.item__image--main {
+  margin-bottom: 1em;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.item__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  position: relative;
+}
+.item__images::before {
+  content: url(../../assets/icons/arrow-left.svg);
+  position: absolute;
+  left: -35px;
+  cursor: pointer;
+}
+.item__images::after {
+  content: url(../../assets/icons/arrow-right.svg);
+  position: absolute;
+  right: -35px;
+  cursor: pointer;
+}
+.item__image {
+  max-width: 22%;
+  margin: 0 7px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .item--container {
+    flex-direction: row;
+  }
+  .item--left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .item__image--main {
+    margin-bottom: 0em;
+  }
+  .item--right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 2em;
+  }
+  .item__title {
+    margin-bottom: 0.25em;
+  }
+  .item__price {
+    margin-bottom: 1em;
+  }
+  .item__btn {
+    margin-bottom: 2em;
   }
 }
 

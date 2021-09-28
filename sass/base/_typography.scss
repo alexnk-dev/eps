@@ -17,7 +17,7 @@ Typography
   font-size: var(--fs22);
   font-weight: 700;
   margin-bottom: 3rem;
-  max-width: 40ch;
+  max-width: 30ch;
 }
 
 .h3 {
@@ -31,16 +31,32 @@ Typography
 @media screen and (min-width: 768px) {
   .h1 {
     font-size: var(--fs40);
+    max-width: 40ch;
   }
   .h2 {
     font-size: var(--fs32);
+    max-width: 40ch;
   }
   .h3 {
     font-size: var(--fs20);
+    max-width: 40ch;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .h1 {
+    font-size: var(--fs40);
+    max-width: none;
+  }
+  .h2 {
+    font-size: var(--fs32);
+    max-width: none;
+  }
+  .h3 {
+    font-size: var(--fs20);
+    max-width: none;
+  }
+
   .main__header {
     font-size: var(--fs64);
   }

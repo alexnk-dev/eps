@@ -15,25 +15,29 @@
     align-items: center;
     margin: 5px 0;
     position: relative;
+    overflow: hidden;
   }
-  &__images::before {
-    content: url(../../assets/icons/arrow-left.svg);
-    position: absolute;
-    left: -35px;
-    // left: -25px;
-    cursor: pointer;
-  }
-  &__images::after {
-    content: url(../../assets/icons/arrow-right.svg);
-    position: absolute;
-    right: -35px;
-    // right: -25px;
-    cursor: pointer;
-  }
+  // &__images::before {
+  //   content: url(../../assets/icons/arrow-left.svg);
+  //   position: absolute;
+  //   left: -35px;
+  //   // left: -25px;
+  //   cursor: pointer;
+  // }
+  // &__images::after {
+  //   content: url(../../assets/icons/arrow-right.svg);
+  //   position: absolute;
+  //   right: -35px;
+  //   // right: -25px;
+  //   cursor: pointer;
+  // }
   &__image {
     max-width: 22%;
     margin: 0 7px;
     border-radius: 5px;
+  }
+  &__arrow {
+    fill: black;
   }
 }
 

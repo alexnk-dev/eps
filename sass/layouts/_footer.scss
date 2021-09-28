@@ -85,6 +85,21 @@
   white-space: nowrap;
 }
 
+.footer-email__input,
+.footer-email__textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--clr-bw900);
+  border-radius: 5px;
+}
+
+.footer-email__input {
+  min-height: 30px;
+}
+.footer-email__textarea {
+  min-height: 90px;
+}
+
 .copyright {
   width: 100%;
   display: flex;

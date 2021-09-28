@@ -12,7 +12,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
-
+  // border: 1px solid black;
   /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
 }
 
@@ -30,6 +30,17 @@
 
 .card-services {
   position: relative;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 5px;
+  // padding: 0 1em;
+}
+
+.img-service0 {
+  object-fit: cover;
+  /* height: 300px; */
+  // filter: contrast(0.7) sepia(0.86) hue-rotate(97deg) brightness(0.7);
+  /* filter: contrast(0.7) grayscale(0.99) hue-rotate(97deg) brightness(0.7); */
+  border-radius: 5px;
 }
 
 .img-service {
@@ -37,10 +48,16 @@
   /* height: 300px; */
   filter: contrast(0.7) sepia(0.86) hue-rotate(97deg) brightness(0.7);
   /* filter: contrast(0.7) grayscale(0.99) hue-rotate(97deg) brightness(0.7); */
+  border-radius: 5px;
 }
 
 .img-service:hover {
   filter: none;
+}
+
+.img-title {
+  padding: 1em 1em;
+  min-height: 5em;
 }
 
 .img-service2 {
@@ -48,6 +65,7 @@
   /* height: 300px; */
   // filter: contrast(0.7) (0.86) hue-rotate(97deg) brightness(0.7);
   filter: contrast(0.7) grayscale(1) hue-rotate(97deg) brightness(0.7);
+  border-radius: 5px;
 }
 
 .img-service2:hover {
@@ -80,8 +98,8 @@
   display: flex;
   width: 100%;
   height: 250px;
-
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .img-box {
@@ -92,7 +110,7 @@
   background: rgba(151, 161, 158, 0.4);
   // opacity: 60%;
   backdrop-filter: blur(5px);
-  height: calc(80% - 10px);
+  height: calc(50% - 10px);
   width: calc(100% - 10px);
   z-index: 11;
   display: flex;
@@ -103,6 +121,7 @@
 
 .img-service3 {
   z-index: 0;
+  border-radius: 5px;
 }
 
 .z {

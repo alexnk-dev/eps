@@ -35,30 +35,34 @@ for (let i = 0; i < more.length; i++) {
 
 let currentImage = 0;
 console.log(currentImage);
+console.log(slidesCount);
 
 function changeSlide(direction) {
   if (direction === "up") {
     currentImage++;
-    if (currentImage === slidesCount) {
+    if (currentImage === slidesCount.length) {
       currentImage = 0;
     }
   }
   if (direction === "down") {
     currentImage--;
     if (currentImage < 0) {
-      currentImage = slidesCount - 1;
+      currentImage = slidesCount.length - 1;
     }
   }
 }
 
 arrowLeft.addEventListener("click", () => {
   changeSlide("down");
-  console.log(currentImage);
+  // console.log(currentImage);
+  slidesCount.scrollLeft += 180;
 });
 
 arrowRight.addEventListener("click", () => {
   changeSlide("up");
   console.log(currentImage);
+  console.log(slidesCount);
+  slidesCount.scrollRight += 180;
 });
 
 for (var i = 0; i < slidesCount.length; i++) {

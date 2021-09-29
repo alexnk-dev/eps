@@ -6,7 +6,7 @@ Typography
 
 .h1 {
   font-family: var(--ff100);
-  font-size: var(--fs24);
+  font-size: var(--fs20);
   font-weight: 700;
   margin-bottom: 3rem;
   max-width: 30ch;
@@ -14,7 +14,7 @@ Typography
 
 .h2 {
   font-family: var(--ff100);
-  font-size: var(--fs22);
+  font-size: var(--fs18);
   font-weight: 700;
   margin-bottom: 3rem;
   max-width: 30ch;
@@ -22,23 +22,35 @@ Typography
 
 .h3 {
   font-family: var(--ff100);
-  font-size: var(--fs20);
+  font-size: var(--fs16);
   font-weight: 700;
   margin-bottom: 0.7em;
   max-width: 30ch;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .h1 {
-    font-size: var(--fs40);
-    max-width: 40ch;
+    font-size: var(--fs24);
   }
   .h2 {
-    font-size: var(--fs32);
-    max-width: 40ch;
+    font-size: var(--fs22);
   }
   .h3 {
     font-size: var(--fs20);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .h1 {
+    font-size: var(--fs30);
+    max-width: 40ch;
+  }
+  .h2 {
+    font-size: var(--fs24);
+    max-width: 40ch;
+  }
+  .h3 {
+    font-size: var(--fs22);
     max-width: 40ch;
   }
 }
@@ -109,5 +121,21 @@ Typography
     font-family: var(--ff100);
     font-size: var(--fs12);
     font-weight: 700;
+  }
+}
+
+.copyright__text {
+  font-size: var(--fs12);
+}
+
+@media screen and (min-width: 480px) {
+  .copyright__text {
+    font-size: var(--fs14);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyright__text {
+    font-size: var(--fs16);
   }
 }

@@ -28,20 +28,87 @@
   }
 }
 
-.card-services {
+.card-services0 {
   position: relative;
-  box-shadow: 2px 2px 4px black;
+
   border-radius: 5px;
   // padding: 0 1em;
-  background: var(--clr-np300);
+  // background: var(--clr-bw100);
+  // background: linear-gradient(187deg, lightgray, lightgray, gray);
+  // background: linear-gradient(
+  //   125deg,
+  //   var(--clr-np300),
+  //   var(--clr-np300),
+  //   var(--clr-np400)
+  // );
+  box-shadow: -0px -0px 1px black, 1px 1px 2px black;
+  // box-shadow: -0px -0px 1px black, 1px 1px 2px var(--clr-dp100);
+}
+
+.card-services0:hover {
+  // background: linear-gradient(
+  //   225deg,
+  //   var(--clr-np300),
+  //   var(--clr-np300),
+  //   var(--clr-np400),
+  //   var(--clr-dp100)
+  // );
+  // background: linear-gradient(
+  //   125deg,
+  //   var(--clr-np300),
+  //   var(--clr-np300),
+  //   var(--clr-np400),
+  //   var(--clr-dp100)
+  // );
+
+  // box-shadow: -0px -0px 4px black, 2px 2px 4px black;
+  box-shadow: -0px -0px 4px black, 3px 3px 5px var(--clr-dp100);
+}
+
+.card-services0:hover .img-service0 {
+  opacity: 1;
+}
+
+.img-title0 {
+  padding: 1em 2em;
+  min-height: 3em;
+  color: #2c2d2e;
+  // text-shadow: 2px 2px 2px var(--clr-dp100);
+}
+
+.card-services0:hover .img-title0 h3 {
+  // color: var(--clr-dp400);
+  text-shadow: 2px 2px 2px var(--clr-dp100);
 }
 
 .img-service0 {
   object-fit: cover;
-  /* height: 300px; */
+  min-height: 220px;
+  background: black;
   // filter: contrast(0.7) sepia(0.86) hue-rotate(97deg) brightness(0.7);
   /* filter: contrast(0.7) grayscale(0.99) hue-rotate(97deg) brightness(0.7); */
   border-radius: 5px;
+  opacity: 0.5;
+}
+
+.card-services:hover .img-service0 {
+  opacity: 1;
+}
+
+.card-services1 {
+  position: relative;
+
+  border-radius: 5px;
+  // padding: 0 1em;
+  // background: var(--clr-bw100);
+  background: linear-gradient(
+    -225deg,
+    var(--clr-np300),
+    var(--clr-np300),
+    var(--clr-np400),
+    var(--clr-dp400)
+  );
+  box-shadow: -0px -0px 1px black, 1px 1px 2px black;
 }
 
 .img-service {
@@ -57,8 +124,14 @@
 }
 
 .img-title {
-  padding: 2em;
-  min-height: 5em;
+  padding: 1em 2em;
+  min-height: 3em;
+  color: #2c2d2e;
+  // text-shadow: 2px 2px 2px var(--clr-dp100);
+}
+
+.img-title h3 {
+  font-size: var(--fs16);
 }
 
 .img-service2 {
@@ -131,7 +204,9 @@
   left: 5px;
   z-index: 30;
   // color: whitesmoke;
-  color: black;
+  color: var(--clr-bw900);
+  text-shadow: -3px -3px 2px var(--clr-bw100);
+  padding: 0 2em 1em;
 }
 
 .how-works__list,

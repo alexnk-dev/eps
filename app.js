@@ -5,8 +5,9 @@ const more = document.querySelectorAll(".btn-more");
 const cardContent = document.querySelectorAll(".card__content");
 const arrowLeft = document.querySelector(".item__arrow--left");
 const arrowRight = document.querySelector(".item__arrow--right");
-const slidesCount = document.querySelectorAll(".item__images");
-console.log(slidesCount);
+const slidesCount = document.getElementsByClassName("item__image");
+const activeImage = document.getElementsByClassName("item__image--active");
+console.log(activeImage);
 
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -59,3 +60,15 @@ arrowRight.addEventListener("click", () => {
   changeSlide("up");
   console.log(currentImage);
 });
+
+for (var i = 0; i < slidesCount.length; i++) {
+  slidesCount[i].addEventListener("mouseover", function () {
+    if (activeImage.length > 0) {
+      activeImage[0].classList.remove("item__image--active");
+    }
+
+    this.classList.add("item__image--active");
+    document.querySelector(".item__image--main").src = this.src;
+    // document.getElementById("featured").src = this.src;
+  });
+}

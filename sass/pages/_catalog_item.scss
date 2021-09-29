@@ -35,6 +35,14 @@
     max-width: 22%;
     margin: 0 7px;
     border-radius: 5px;
+    opacity: 0.5;
+  }
+  &__image:hover {
+    opacity: 1;
+  }
+
+  &__image--active {
+    opacity: 1;
   }
   &__arrow {
     fill: black;

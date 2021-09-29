@@ -223,6 +223,7 @@
   background: var(--clr-bw100);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
+  margin-bottom: 5px;
 }
 
 .services--box .how-works__list:hover .how-works__item,
@@ -252,8 +253,8 @@
   width: 30px;
   height: 30px;
   font-size: var(--fs20);
-  text-align: right;
-  text-shadow: 1px 1px 1px var(--clr-bw900);
+  text-align: center;
+  // text-shadow: 1px 1px 1px var(--clr-bw900);
   line-height: 30px;
   background: var(--clr-np100);
   color: var(--clr-bw100);
@@ -267,8 +268,8 @@
   width: 30px;
   height: 30px;
   font-size: var(--fs20);
-  text-align: right;
-  text-shadow: 1px 1px 1px var(--clr-bw900);
+  text-align: center;
+  // text-shadow: 1px 1px 1px var(--clr-bw900);
   line-height: 30px;
   background: var(--clr-np200);
   color: var(--clr-bw100);

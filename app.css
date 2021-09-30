@@ -632,6 +632,25 @@ Layout
   text-decoration: none;
 }
 
+.nav__link:hover,
+.nav__link:focus {
+  text-shadow: 2px 2px 2px var(--clr-dp100);
+}
+
+.nav--active .nav__link:hover,
+.nav--active .nav__link:focus {
+  color: var(--clr-bw900);
+  text-shadow: 3px 3px 3px var(--clr-dp100);
+}
+
+.nav__link--active {
+  text-shadow: 2px 2px 2px var(--clr-dp100);
+}
+
+.nav--active .nav__link--active {
+  text-shadow: 3px 3px 3px var(--clr-dp100);
+}
+
 .nav__item--about,
 .nav__item--services,
 .nav__item--equipment,

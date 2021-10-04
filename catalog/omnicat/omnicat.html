@@ -7,6 +7,11 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>Каталог оборудования</title>
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link
       rel="icon"
       type="image/png"
       href="../../assets/fav/epsilontek_fav.png"
@@ -100,7 +105,7 @@
               <h3 class="h3 item__title">Цена:</h3>
               <p class="h3 item__price">По запросу</p>
                 <button class="item__btn btn--large btn--light" >Отправить запрос</button>
-             
+
               <p class="main__content">
                 Серия комплексов плазменной резки OMNICUT - это снабженные ЧПУ
                 установки термической резки, имеющие прочную портальную
@@ -113,6 +118,50 @@
               </p>
             
             </div>
+<div class="item--container">
+            <div class="item--left">
+            <div class="swiper__container">
+      <!-- Slider main container -->
+      <div class="image__slider swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="swiper__image"
+              src="./assets/images/fibre_arrow.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper__image"
+              src="./assets/images/fibre_arrow.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper__image"
+              src="./assets/images/omnicut.jpg"
+              alt=""
+            />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+           </div> </div>
+            
       </div>
     </main>
     <!-- Footer start-->
@@ -217,5 +266,35 @@
     </div>
     <!-- Footer end-->
     <script src="../../app.js"></script>
+    <script src="../../swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+
+        thumbs: {
+          swiper: {
+            el: ".image-mini-slider",
+            slidesPerView: 3,
+          }
+        }
+      });
+    </script>
   </body>
 </html>

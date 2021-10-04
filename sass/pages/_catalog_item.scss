@@ -85,3 +85,20 @@
     }
   }
 }
+
+.swiper__container {
+  display: flex;
+  min-width: 0;
+  width: 500px;
+}
+
+.swiper {
+  width: 100%;
+
+  background-color: aquamarine;
+}
+
+.swiper-slide,
+.swiper__image {
+  max-width: 100%;
+}

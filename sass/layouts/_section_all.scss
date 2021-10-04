@@ -10,10 +10,16 @@
   border: 1px solid var(--clr-bw900);
   border-radius: 10px;
   margin-bottom: 2rem;
-  min-height: 300px;
   object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .aboutus__image {
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
 .left,
 .right,
 .left2,

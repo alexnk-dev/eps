@@ -76,3 +76,5 @@ for (var i = 0; i < slidesCount.length; i++) {
     // document.getElementById("featured").src = this.src;
   });
 }
+
+new Swiper(".image__slider");

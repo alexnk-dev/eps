@@ -10,7 +10,7 @@ Layout
 .header__container,
 .main__container,
 .footer__container {
-  padding: 2rem;
+  padding: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,6 +19,7 @@ Layout
   .footer__container {
     max-width: 1500px;
     margin: 1rem auto;
+    padding: 2rem;
   }
 
   .footer__container {

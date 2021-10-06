@@ -13,6 +13,14 @@
     grid-template-columns: 4fr 6fr;
   }
 
+  .aboutus3 {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "c b";
+    grid-template-columns: 6fr 4fr;
+  }
+
   .a {
     grid-area: a;
   }

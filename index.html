@@ -123,35 +123,29 @@
         <!-- Section 2 end-->
         <!-- Section 3 start-->
         <section class="aboutus3">
-          <div class="left">
-            <h1 class="h1">Поставщик промышленного оборудования и станков</h1>
-
-            <p class="main__content">
-              <span class="epsilontek">ООО "Эпсилонтэк"</span>
-              - поставщик промышленного оборудования, станков, оснастки и
-              запасных частей.
-            </p>
-            <div class="btns">
-              <a
-                href="./pages/equipment/equipment.html"
-                class="btn--large btn--light"
-              >
-                Каталог оборудования
-              </a>
-              <a
-                href="./pages/partners/partners.html"
-                class="btn--large btn--100"
-              >
-                Производители оборудования
-              </a>
-            </div>
-          </div>
-          <div class="right">
+          <h2 class="h1 left a">
+            Поставщик промышленного оборудования и станков
+          </h2>
+          <div class="right b">
             <img
               class="aboutus__image"
               src="./assets/images/st2.jpg"
               alt="st1"
             />
+          </div>
+          <div class="left c">
+            <p class="main__content">
+              <span class="epsilontek">ООО "Эпсилонтэк"</span>
+              - поставщик промышленного оборудования, станков, оснастки и
+              запасных частей.
+            </p>
+
+            <a
+              href="./pages/equipment/equipment.html"
+              class="btn--large btn--light"
+            >
+              Каталог оборудования
+            </a>
           </div>
         </section>
         <!-- Section 3 end-->
@@ -365,10 +359,19 @@
         <!-- Footer message-->
         <div class="footer__message">
           <h2 class="footer__header">Отправить нам сообщение</h2>
-          <form class="footer-message__form" action="#">
+          <form
+            class="footer-message__form"
+            action="https://formsubmit.co/sh_ark@mail.ru"
+            method="POST"
+          >
             <div class="footer-email">
               <div class="footer-email__email">Ваш еmail адрес*</div>
-              <input class="footer-email__input" type="email" required />
+              <input
+                class="footer-email__input"
+                type="email"
+                name="email"
+                required
+              />
             </div>
             <div class="msg">
               <div class="text">Текст сообщения *</div>
@@ -376,6 +379,7 @@
                 class="footer-email__textarea"
                 rows="2"
                 cols="25"
+                name="text"
                 required
               ></textarea>
             </div>

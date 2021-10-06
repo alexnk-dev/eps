@@ -89,12 +89,12 @@
               <div class="company__details">
                 <div class="ogrn">
                   <h3 class="h3">ОГРН</h3>
-                  <p class="h3">1197746702010</p>
+                  <p class="main__content">1197746702010</p>
                 </div>
                 <div class="kpp">
                   <h3 class="h3">ИНН/КПП</h3>
-                  <p class="h3">7714455736</p>
-                  <p class="h3">772601001</p>
+                  <p class="main__content">7714455736</p>
+                  <p class="main__content">772601001</p>
                 </div>
               </div>
 
@@ -104,25 +104,18 @@
                 XI/29
               </p>
             </div>
-            <div class="contacts__right">
-              <img
-                class="contacts__image"
-                src="./assets/images/contact_us.jpg"
-                alt=""
-              />
-            </div>
           </div>
         </section>
         <section class="contact-us">
           <h2 class="h2">Написать сообщение</h2>
-          <div class="contact-us__container">
+          <form class="contact-us__container">
             <div class="contact-us__row">
               <div class="contact-us__col">
                 <div class="contact-us__input-box">
                   <input
                     class="contact-us__input"
                     type="text"
-                    name=""
+                    name="Имя"
                     required="required"
                   />
                   <span class="contact-us__text">Ваше имя</span>
@@ -134,7 +127,7 @@
                   <input
                     class="contact-us__input"
                     type="text"
-                    name=""
+                    name="компания"
                     required="required"
                   />
                   <span class="contact-us__text">Компания</span>
@@ -147,8 +140,8 @@
                 <div class="contact-us__input-box">
                   <input
                     class="contact-us__input"
-                    type="text"
-                    name=""
+                    type="email"
+                    name="email"
                     required="required"
                   />
                   <span class="contact-us__text">Email</span>
@@ -159,8 +152,8 @@
                 <div class="contact-us__input-box">
                   <input
                     class="contact-us__input"
-                    type="text"
-                    name=""
+                    type="tel"
+                    name="телефон"
                     required="required"
                   />
                   <span class="contact-us__text">Телефон</span>
@@ -187,11 +180,12 @@
                 <input
                   class="btn--large btn--light"
                   type="submit"
+                  name="submit"
                   value="Отправить"
                 />
               </div>
             </div>
-          </div>
+          </form>
         </section>
       </div>
     </main>

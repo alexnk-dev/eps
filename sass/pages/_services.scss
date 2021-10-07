@@ -30,38 +30,12 @@
 
 .card-services0 {
   position: relative;
-
   border-radius: 5px;
-  // padding: 0 1em;
-  // background: var(--clr-bw100);
-  // background: linear-gradient(187deg, lightgray, lightgray, gray);
-  // background: linear-gradient(
-  //   125deg,
-  //   var(--clr-np300),
-  //   var(--clr-np300),
-  //   var(--clr-np400)
-  // );
   box-shadow: -0px -0px 1px black, 1px 1px 2px black;
   // box-shadow: -0px -0px 1px black, 1px 1px 2px var(--clr-dp100);
 }
 
 .card-services0:hover {
-  // background: linear-gradient(
-  //   225deg,
-  //   var(--clr-np300),
-  //   var(--clr-np300),
-  //   var(--clr-np400),
-  //   var(--clr-dp100)
-  // );
-  // background: linear-gradient(
-  //   125deg,
-  //   var(--clr-np300),
-  //   var(--clr-np300),
-  //   var(--clr-np400),
-  //   var(--clr-dp100)
-  // );
-
-  // box-shadow: -0px -0px 4px black, 2px 2px 4px black;
   box-shadow: -0px -0px 4px black, 3px 3px 5px var(--clr-dp100);
 }
 

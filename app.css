@@ -517,15 +517,27 @@ Typography
   .nav__link {
     font-size: var(--fs12);
   }
+
+  .img-title0 h3 {
+    font-size: var(--fs16);
+  }
 }
 @media screen and (min-width: 920px) {
   .nav__link {
     font-size: var(--fs14);
   }
+
+  .img-title0 h3 {
+    font-size: var(--fs18);
+  }
 }
 @media screen and (min-width: 1200px) {
   .nav__link {
     font-size: var(--fs16);
+  }
+
+  .img-title0 h3 {
+    font-size: var(--fs20);
   }
 }
 .footer__header {

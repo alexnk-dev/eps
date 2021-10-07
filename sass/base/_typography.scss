@@ -20,7 +20,8 @@ Typography
   max-width: 30ch;
 }
 
-.h3 {
+.h3,
+.card-services0__title {
   font-family: var(--ff100);
   font-size: var(--fs16);
   font-weight: 700;
@@ -72,6 +73,10 @@ Typography
   .main__header {
     font-size: var(--fs64);
   }
+
+  .card-services0__title {
+    font-size: var(--fs20);
+  }
 }
 
 .main__content {
@@ -89,9 +94,6 @@ Typography
   .nav__link {
     font-size: var(--fs12);
   }
-  .img-title0 h3 {
-    font-size: var(--fs16);
-  }
 }
 
 @media screen and (min-width: 920px) {
@@ -107,9 +109,9 @@ Typography
   .nav__link {
     font-size: var(--fs16);
   }
-  .img-title0 h3 {
-    font-size: var(--fs20);
-  }
+  // .img-title0 h3 {
+  //   font-size: var(--fs20);
+  // }
 }
 
 .footer__header {

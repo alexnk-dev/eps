@@ -3,11 +3,6 @@ const nav = document.querySelector(".nav");
 const navLink = document.querySelectorAll(".nav__link");
 const more = document.querySelectorAll(".btn-more");
 const cardContent = document.querySelectorAll(".card__content");
-const arrowLeft = document.querySelector(".item__arrow--left");
-const arrowRight = document.querySelector(".item__arrow--right");
-const slidesCount = document.getElementsByClassName("item__image");
-const activeImage = document.getElementsByClassName("item__image--active");
-console.log(activeImage);
 
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -32,3 +27,33 @@ for (let i = 0; i < more.length; i++) {
     );
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form");
+  // console.log(form);
+  // let fData = new FormData(form);
+  // const vals = Object.fromEntries(fData.entries());
+  // console.log(">>", vals);
+
+  form.addEventListener("submit", formSend);
+
+  async function formSend(e) {
+    e.preventDefault();
+
+    let formData = new FormData(form);
+    const vals = Object.fromEntries(formData.entries());
+    console.log(">>", vals);
+    let response = await fetch("sendmail.php", {
+      method: "POST",
+      body: formData,
+    });
+    console.log(response);
+    if (response.ok) {
+      let result = await response.json();
+      alert(result.message);
+      form.reset();
+    } else {
+      alert("Error");
+    }
+  }
+});

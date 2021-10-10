@@ -109,8 +109,9 @@
         <section class="contact-us">
           <h2 class="h2">Написать сообщение</h2>
           <form
+            id="form-contacts"
             class="contact-us__container"
-            action="https://formsubmit.co/sh_ark@mail.ru"
+            action="#"
             method="POST"
           >
             <div class="contact-us__row">
@@ -119,7 +120,7 @@
                   <input
                     class="contact-us__input"
                     type="text"
-                    name="Имя"
+                    name="name"
                     required="required"
                   />
                   <span class="contact-us__text">Ваше имя</span>
@@ -131,7 +132,7 @@
                   <input
                     class="contact-us__input"
                     type="text"
-                    name="компания"
+                    name="company"
                     required="required"
                   />
                   <span class="contact-us__text">Компания</span>
@@ -157,7 +158,7 @@
                   <input
                     class="contact-us__input"
                     type="tel"
-                    name="телефон"
+                    name="phone"
                     required="required"
                   />
                   <span class="contact-us__text">Телефон</span>
@@ -172,6 +173,8 @@
                 >
                   <textarea
                     class="contact-us__textarea"
+                    type="text"
+                    name="text"
                     required="required"
                   ></textarea>
                   <span class="contact-us__text">Текст сообщения</span>
@@ -267,10 +270,20 @@
         <!-- Footer message-->
         <div class="footer__message">
           <h2 class="footer__header">Отправить нам сообщение</h2>
-          <form class="footer-message__form" action="#">
+          <form
+            id="form"
+            class="footer-message__form"
+            action="#"
+            method="POST"
+          >
             <div class="footer-email">
               <div class="footer-email__email">Ваш еmail адрес*</div>
-              <input class="footer-email__input" type="email" required />
+              <input
+                class="footer-email__input"
+                type="email"
+                name="email"
+                required
+              />
             </div>
             <div class="msg">
               <div class="text">Текст сообщения *</div>
@@ -278,12 +291,13 @@
                 class="footer-email__textarea"
                 rows="2"
                 cols="25"
+                name="text"
                 required
               ></textarea>
             </div>
-            <button class="btn--darker btn--footer btn" type="submit">
-              Отправить
-            </button>
+            <input class="btn--darker btn--footer btn" type="submit">
+              
+            </input>
           </form>
         </div>
       </div>

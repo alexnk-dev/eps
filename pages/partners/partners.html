@@ -224,10 +224,20 @@
         <!-- Footer message-->
         <div class="footer__message">
           <h2 class="footer__header">Отправить нам сообщение</h2>
-          <form class="footer-message__form" action="#">
+          <form
+            id="form"
+            class="footer-message__form"
+            action="#"
+            method="POST"
+          >
             <div class="footer-email">
               <div class="footer-email__email">Ваш еmail адрес*</div>
-              <input class="footer-email__input" type="email" required />
+              <input
+                class="footer-email__input"
+                type="email"
+                name="email"
+                required
+              />
             </div>
             <div class="msg">
               <div class="text">Текст сообщения *</div>
@@ -235,12 +245,13 @@
                 class="footer-email__textarea"
                 rows="2"
                 cols="25"
+                name="text"
                 required
               ></textarea>
             </div>
-            <button class="btn--darker btn--footer btn" type="submit">
-              Отправить
-            </button>
+            <input class="btn--darker btn--footer btn" type="submit">
+              
+            </input>
           </form>
         </div>
       </div>

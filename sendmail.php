@@ -33,7 +33,8 @@
   $mail->setFrom('contacts@epsilontek.ru', 'Epsilontek.contacts');
   }
   $mail->addAddress('sh_ark@mail.ru');
-
+  $mail->addAddress('info@epsilontek.ru');
+  $mail->addAddress('hasanovroman@list.ru');
   
 
   // Отправка сообщения

@@ -120,6 +120,12 @@
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
   }
 }

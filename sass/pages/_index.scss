@@ -1,3 +1,7 @@
+.epsilontek {
+  color: var(--clr-dp100);
+}
+
 @media screen and (min-width: 768px) {
   .aboutus,
   .aboutus2,
@@ -33,9 +37,38 @@
     grid-area: c;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .--width60 {
+    width: 60%;
+  }
+  .--width55 {
+    width: 55%;
   }
 
+  .--width50 {
+    width: 50%;
+  }
+
+  .--width45 {
+    width: 45%;
+  }
+
+  .--width40 {
+    width: 40%;
+  }
+
+  .--width500px {
+    max-width: 600px;
+  }
+
+  // .--mw25ch {
+  //   max-width: 25ch;
+  // }
+
+  // .--mw16ch {
+  //   max-width: 25ch;
+  // }
   // .left {
   //   width: 60%;
   //   // justify-content: space-between;

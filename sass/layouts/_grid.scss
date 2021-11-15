@@ -13,6 +13,10 @@ Layout
   padding: auto;
 }
 
+.footer__container {
+  margin: 1rem auto;
+}
+
 @media screen and (min-width: 768px) {
   .header__container,
   .main__container,
@@ -22,8 +26,8 @@ Layout
     padding: 2rem;
   }
 
-  .footer__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+  // .footer__container {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr 1fr;
+  // }
 }

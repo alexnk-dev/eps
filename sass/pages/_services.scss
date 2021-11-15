@@ -39,9 +39,9 @@
   box-shadow: -0px -0px 4px black, 3px 3px 5px var(--clr-dp100);
 }
 
-.card-services0:hover .img-service0 {
-  opacity: 1;
-}
+// .card-services0:hover .img-service0 {
+//   opacity: 1;
+// }
 
 .img-title0 {
   padding: 1em 2em;
@@ -62,11 +62,20 @@
   // filter: contrast(0.7) sepia(0.86) hue-rotate(97deg) brightness(0.7);
   /* filter: contrast(0.7) grayscale(0.99) hue-rotate(97deg) brightness(0.7); */
   border-radius: 5px;
-  opacity: 0.5;
+  // opacity: 0.5;
 }
 
-.card-services:hover .img-service0 {
+.card-services1:hover {
+  box-shadow: -0px -0px 4px black, 3px 3px 5px var(--clr-dp100);
+}
+
+.card-services1:hover .img-service0 {
   opacity: 1;
+}
+
+.card-services1:hover .img-title h3 {
+  // color: var(--clr-dp400);
+  text-shadow: 2px 2px 2px var(--clr-dp100);
 }
 
 .card-services1 {

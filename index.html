@@ -45,9 +45,7 @@
               </a>
             </li>
             <li class="nav__item nav__item--articles">
-              <a class="nav__link" href="./pages/articles/articles.html">
-                Статьи
-              </a>
+              <a class="nav__link" href="./pages/news/news.html">Новости</a>
             </li>
             <li class="nav__item nav__item--partners">
               <a class="nav__link" href="./pages/partners/partners.html">
@@ -107,7 +105,7 @@
           </div>
           <div class="left c">
             <p class="main__content --width500px">
-              <span class="epsilontek">EpsilonTek</span>
+              <span class="epsilontek">ООО "Эпсилонтэк"</span>
               - потенциальный партнер в решении задач и проблем, в которых у
               существующих на рынке игроков не всегда достаточно компетенций и
               гибкости подхода.
@@ -170,7 +168,6 @@
                   IT-структура, производство или сбыт.
                 </p>
               </div>
-              <a class="btn-more"></a>
             </div>
             <div class="card">
               <div class="card__icon">
@@ -190,7 +187,6 @@
                   структуризация сделки и процессов внутри Вашей компании.
                 </p>
               </div>
-              <a class="btn-more"></a>
             </div>
             <div class="card">
               <div class="card__icon">
@@ -208,7 +204,6 @@
                   Вам комфортнее будет принять найденное нами решение.
                 </p>
               </div>
-              <a class="btn-more"></a>
             </div>
             <div class="card">
               <div class="card__icon">
@@ -226,25 +221,6 @@
                   интересы перед третьими лицами.
                 </p>
               </div>
-              <a class="btn-more"></a>
-            </div>
-            <div class="card">
-              <div class="card__icon">
-                <img
-                  class="card__image"
-                  width="100"
-                  src="./assets/icons/service.svg"
-                  alt=""
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="h2">Гарантия</h2>
-                <p>
-                  Обеспечить поставляемое оборудование гарантийными
-                  обязательствами
-                </p>
-              </div>
-              <a class="btn-more"></a>
             </div>
             <div class="card">
               <div class="card__icon">
@@ -258,11 +234,11 @@
               <div class="card__content">
                 <h2 class="h2">Сервис</h2>
                 <p>
-                  Предоставить дальнейшее сервисное обслуживание для продления
-                  срока службы оборудования и бесперебойности эксплуатации.
+                  Предоставить пуско-наладочные работы, обучение и дальнейшее
+                  сервисное обслуживание для продления срока службы оборудования
+                  и обеспечения бесперебойности эксплуатации.
                 </p>
               </div>
-              <a class="btn-more"></a>
             </div>
             <div class="card">
               <div class="card__icon">
@@ -279,7 +255,6 @@
                   Заслужить доверие и стать Вашими партнерами на долгие годы.
                 </p>
               </div>
-              <a class="btn-more"></a>
             </div>
           </div>
         </section>
@@ -319,7 +294,7 @@
           <h2 class="footer__header">Контакты</h2>
 
           <a class="footer__phone" href="tel:+79037943303">
-            +7(903)-
+            <span class="phone__number">+7-903-</span>
             <span class="phone__number">794-33-03</span>
           </a>
 
@@ -347,9 +322,7 @@
           <a class="footer__link" href="./pages/equipment/equipment.html">
             Оборудование
           </a>
-          <a class="footer__link" href="./pages/articles/articles.html">
-            Статьи
-          </a>
+          <a class="footer__link" href="./pages/news/news.html">Новости</a>
           <a class="footer__link" href="./pages/partners/partners.html">
             Партнеры
           </a>
@@ -380,7 +353,23 @@
                 required
               ></textarea>
             </div>
-            <input class="btn--darker btn--footer btn" type="submit" />
+            <div class="checkbox">
+              <input
+                id="formAgreementFooter"
+                type="checkbox"
+                name="agreement"
+                class="checkbox__input"
+                checked
+                required
+              />
+              <label for="formAgreementFooter" class="checkbox__label">
+                <span>
+                  Согласен на обработку персональных данных в соответствии с
+                  <a href="">политикой конфиденциальности</a>
+                </span>
+              </label>
+            </div>
+            <button class="btn--darker btn--footer btn">Отправить</button>
           </form>
         </div>
       </div>

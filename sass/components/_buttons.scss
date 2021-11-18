@@ -51,8 +51,9 @@
 
 .btn--light {
   color: var(--clr-bw100);
-  background: var(--clr-dp200);
-  border: 2px solid var(--clr-dp200);
+  //background: var(--clr-dp200);
+  background: var(--clr-dp100);
+  //border: 2px solid var(--clr-bw900);
 }
 
 .btn--light:hover {

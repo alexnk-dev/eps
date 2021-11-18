@@ -1,7 +1,7 @@
 /* Footer */
 .footer,
 .copyright {
-  background: var(--clr-dp200);
+  background: var(--clr-dp100);
   color: var(--clr-bw900);
 }
 
@@ -50,6 +50,7 @@
     display: block;
     margin-bottom: 1em;
     text-shadow: -3px -3px 2px var(--clr-dp100);
+    white-space: nowrap;
   }
 
   &__phone:hover {
@@ -91,6 +92,7 @@
   background: rgba(255, 255, 255, 0.3);
   border: 1px solid var(--clr-bw900);
   border-radius: 5px;
+  padding: 0.5em;
 }
 
 .footer-email__input {

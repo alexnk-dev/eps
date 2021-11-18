@@ -24,16 +24,16 @@
   filter: brightness(0) saturate(100%);
 }
 
-.card__content {
-  position: relative;
-  height: 15rem;
-  overflow: hidden;
-}
+// .card__content {
+//   position: relative;
+//   height: 20rem;
+//   overflow: hidden;
+// }
 
-.card__content--active {
-  height: auto;
-  overflow: visible;
-}
+// .card__content--active {
+//   height: auto;
+//   overflow: visible;
+// }
 
 .card__content::before {
   content: "";
@@ -47,27 +47,27 @@
 
 .card__content {
   position: relative;
-  height: 15rem;
+  height: 27rem;
   overflow: hidden;
 }
 
-.btn-more {
-  position: relative;
-  padding: 0.75em 2em;
-  background: var(--clr-dp100);
-  margin-top: 2em;
-  display: inline-block;
-  cursor: pointer;
-  text-transform: uppercase;
-  color: var(--clr-bw100);
-  letter-spacing: 2px;
-  font-weight: 500;
-}
+// .btn-more {
+//   position: relative;
+//   padding: 0.75em 2em;
+//   background: var(--clr-dp100);
+//   margin-top: 2em;
+//   display: inline-block;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   color: var(--clr-bw100);
+//   letter-spacing: 2px;
+//   font-weight: 500;
+// }
 
-.btn-more::before {
-  content: "Подробнее";
-}
+// .btn-more::before {
+//   content: "Подробнее";
+// }
 
-.btn-more--active::before {
-  content: "Свернуть";
-}
+// .btn-more--active::before {
+//   content: "Свернуть";
+// }

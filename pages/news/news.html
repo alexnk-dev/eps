@@ -193,7 +193,25 @@
                 required
               ></textarea>
             </div>
-            <input class="btn--darker btn--footer btn" type="submit" />
+            <div class="checkbox">
+              <input
+                id="formAgreementFooter"
+                type="checkbox"
+                name="agreement"
+                class="checkbox__input"
+                checked
+                required
+              />
+              <label for="formAgreementFooter" class="checkbox__label">
+                <span>
+                  Даю согласие на обработку персональных данных в соответствии с
+                  <a href="../../pages/policy/policy.html" target="_blank">
+                    политикой конфиденциальности
+                  </a>
+                </span>
+              </label>
+            </div>
+            <button class="btn--darker btn--footer btn">Отправить</button>
           </form>
         </div>
       </div>

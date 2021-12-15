@@ -235,3 +235,8 @@
 .contact-us__textarea:valid ~ .line {
   height: 100%;
 }
+
+.checkbox__agreement {
+  max-width: 60ch;
+  word-wrap: break-word;
+}

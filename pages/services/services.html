@@ -91,7 +91,7 @@
             <div class="card-services0">
               <img
                 class="img-service0"
-                src="./assets/images/startup.jpg"
+                src="./assets/images/service_repair.jpg"
                 alt="service1"
               />
               <div class="img-title0">
@@ -156,7 +156,7 @@
                 alt="service1"
               />
               <div class="img-title0">
-                <h3 class="h3">Шеф-монтаж</h3>
+                <h3 class="card-services0__title">Шеф-монтаж</h3>
               </div>
             </div>
             <div class="card-services0">
@@ -166,7 +166,7 @@
                 alt="service1"
               />
               <div class="img-title0">
-                <h3 class="h3">Пуско-наладка</h3>
+                <h3 class="card-services0__title">Пуско-наладка</h3>
               </div>
             </div>
             <div class="card-services0">
@@ -176,7 +176,7 @@
                 alt="service1"
               />
               <div class="img-title0">
-                <h3 class="h3">Ввод в эксплуатацию</h3>
+                <h3 class="card-services0__title">Ввод в эксплуатацию</h3>
               </div>
             </div>
             <div class="card-services0">
@@ -186,7 +186,9 @@
                 alt="service1"
               />
               <div class="img-title0">
-                <h3 class="h3">Сопровождение производства</h3>
+                <h3 class="card-services0__title">
+                  Сопровождение производства
+                </h3>
               </div>
             </div>
             <div class="card-services0">
@@ -196,7 +198,7 @@
                 alt="service1"
               />
               <div class="img-title0">
-                <h3 class="h3">Обучение персонала</h3>
+                <h3 class="card-services0__title">Обучение персонала</h3>
               </div>
             </div>
 
@@ -207,7 +209,7 @@
                 alt="service1"
               />
               <div class="img-title0">
-                <h3 class="h3">
+                <h3 class="card-services0__title">
                   Поставка быстроизнашиваемых запасных частей и инструмента
                 </h3>
               </div>
@@ -386,11 +388,25 @@
                 required
               ></textarea>
             </div>
-            <input
-              class="btn--darker btn--footer btn"
-              type="submit"
-              value="Отправить"
-            />
+            <div class="checkbox">
+              <input
+                id="formAgreementFooter"
+                type="checkbox"
+                name="agreement"
+                class="checkbox__input"
+                checked
+                required
+              />
+              <label for="formAgreementFooter" class="checkbox__label">
+                <span>
+                  Даю согласие на обработку персональных данных в соответствии с
+                  <a href="../../pages/policy/policy.html" target="_blank">
+                    политикой конфиденциальности
+                  </a>
+                </span>
+              </label>
+            </div>
+            <button class="btn--darker btn--footer btn">Отправить</button>
           </form>
         </div>
       </div>

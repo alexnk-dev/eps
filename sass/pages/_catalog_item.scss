@@ -147,3 +147,194 @@
   position: absolute;
   top: 50%;
 }
+
+.image--brad,
+.catalog__image {
+  //max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog__image {
+    max-width: 45%;
+  }
+}
+
+.catalog__image-ms300 {
+  max-height: 450px;
+}
+
+.support__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1200px) {
+  .support__container {
+    display: flex;
+    //grid-template-columns: 1fr 1fr;
+  }
+}
+
+.catalog__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog__info {
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img__container--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+  }
+}
+.img__support--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .img__support--container {
+    // width: 100%;
+    // display: flex;
+    // justify-content: center;
+    all: unset;
+  }
+}
+
+.img__support--m4000pcs {
+  max-width: 129px;
+}
+
+.img__support--m4000cap {
+  max-width: 101px;
+}
+
+.img__support--b1000 {
+  max-width: 200px;
+}
+
+.table-cnc__wrapper {
+  overflow-x: auto;
+}
+
+.table-cnc__table {
+  border-collapse: collapse;
+  //box-shadow: 0 5px 10px var(--clr-dp200);
+  background-color: var(--clr-bw100);
+  text-align: left;
+  max-width: fit-content;
+  //max-width: 100vw;
+  //margin: 0 0 2em;
+  //overflow-x: auto;
+  //white-space: nowrap;
+}
+
+.table-cnc__caption {
+  background-color: var(--clr-dp200);
+  color: var(--clr-bw100);
+  padding: 0;
+}
+
+.table-cnc__table td {
+  padding: 3px 5px;
+  font-size: var(--fs12);
+}
+
+@media screen and (min-width: 1200px) {
+  .table-cnc__table {
+    margin: 0 2em 2em;
+  }
+  .table-cnc__caption {
+    padding: 3px 10px;
+  }
+
+  .table-cnc__table td {
+    padding: 3px 30px;
+    font-size: var(--fs16);
+  }
+}
+
+.table-cnc__table tr:nth-child(even) {
+  background-color: #d9eddf;
+}
+
+.ul__details,
+.ul__details-2,
+.ul__support {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ul__details,
+.ul__details-2,
+.ul__support {
+  margin: 0 1em;
+}
+
+@media screen and (min-width: 1200px) {
+  .ul__support {
+    margin: 0 5em;
+  }
+
+  .ul__details-2 {
+    margin: 0 5em;
+  }
+}
+
+.ul__details li,
+.ul__details-2 li,
+.ul__support li {
+  position: relative;
+  margin: 0.5em;
+}
+
+.ul__details > li {
+  max-width: 80ch;
+}
+
+.ul__details-2 > li {
+  max-width: 150ch;
+}
+
+.ul__support > li {
+  max-width: 50ch;
+}
+
+.ul__details li::before,
+.ul__details-2 li::before,
+.ul__support li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 8px;
+  left: -1.5em;
+  border-radius: 50%;
+}
+
+.ul__details li::before,
+.ul__support li::before {
+  background-color: var(--clr-dp100);
+}
+
+.ul__details-2 li::before {
+  background-color: var(--clr-dp200);
+}

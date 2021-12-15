@@ -10,7 +10,9 @@
   $email = $_POST['email'];
   $phone = $_POST['phone'];
   $text = $_POST['text'];
-  // $file = $_FILES['myfile'];
+  $h1 = $_POST['title'];
+  $agreement = $_POST['agreement'];
+     // $file = $_FILES['myfile'];
 
   $title = "Контакты - сообщение";
   $body = "
@@ -19,6 +21,7 @@
   <h3>Компания: $company</h3>
   <h3>Почта: $email</h3>
   <h3>Телефон: $phone</h3>
+  <h3>Заголовок: $h1</h3>
   <h3>Сообщение:</h3>$text<br>
   ";
 
@@ -35,6 +38,7 @@
   $mail->addAddress('sh_ark@mail.ru');
   $mail->addAddress('info@epsilontek.ru');
   $mail->addAddress('hasanovroman@list.ru');
+  $mail->addAddress('renatural@mail.ru');
   
 
   // Отправка сообщения

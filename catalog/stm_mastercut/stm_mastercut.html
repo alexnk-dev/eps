@@ -92,35 +92,35 @@
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut2.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut3.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut4.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut5.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut7.jpg"
                       alt=""
                       class="item__image"
                     />
@@ -138,35 +138,35 @@
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut2.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut3.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut4.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut5.jpg"
                       alt=""
                       class="item__image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/images/stm_mastercut.jpg"
+                      src="./assets/images/stm_mastercut7.jpg"
                       alt=""
                       class="item__image"
                     />
@@ -218,7 +218,12 @@
               абразива из режущего резервуара.
             </p>
             <h3 class="h3">Модельный ряд станков* (размеры рабочей зоны)</h3>
-            <table>
+            <img
+              class="catalog__image"
+              src="./assets/images/STM_Arbeitsbereich_MasterCut_rgb-1.jpg.webp"
+              alt=""
+            />
+            <!-- <table>
               <tr>
                 <td>1030</td>
                 <td>1530</td>
@@ -289,7 +294,7 @@
                 <td>6010</td>
                 <td>6510</td>
               </tr>
-            </table>
+            </table>  -->
             <p>*1030 = 1x3 м</p>
             <h3 class="h3">Технические характеристики</h3>
             <h3 class="h3">Скорость позиционирования</h3>
@@ -299,23 +304,32 @@
     </main>
     <aside class="modal modal--l" id="modal1">
       <div class="modal__dialog">
-        <div class="modal__dialog-header">
+        <!--<div class="modal__dialog-header">
           <div class="modal__dialog-header-content"></div>
           <div class="modal__dialog-header-close">
             <button class="js-modal-close modal__dialog-header-close-btn">
               <span>&times;</span>
             </button>
           </div>
-        </div>
+        </div>-->
         <div class="modal__dialog-body">
           <section class="contact-us--modal">
-            <h2 class="h2">Написать сообщение</h2>
             <form
               id="form-contacts"
               class="contact-us__container"
               action="#"
               method="POST"
             >
+              <div class="modal__dialog-header">
+                <div class="modal__dialog-header-content">
+                  <h2 class="h2">Написать сообщение</h2>
+                </div>
+                <div class="modal__dialog-header-close">
+                  <button
+                    class="js-modal-close modal__dialog-header-close-btn"
+                  ></button>
+                </div>
+              </div>
               <div class="contact-us__row">
                 <div class="contact-us__col">
                   <div class="contact-us__input-box">
@@ -387,6 +401,32 @@
               </div>
               <div class="contact-us__row">
                 <div class="contact-us__col">
+                  <div class="checkbox">
+                    <input
+                      id="formAgreement"
+                      type="checkbox"
+                      name="agreement"
+                      class="checkbox__input"
+                      checked
+                      required
+                    />
+                    <label for="formAgreement" class="checkbox__label">
+                      <span class="checkbox__agreement">
+                        Даю согласие на обработку персональных данных в
+                        соответствии с
+                        <a
+                          href="../../pages/policy/policy.html"
+                          target="_blank"
+                        >
+                          политикой конфиденциальности
+                        </a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-us__row">
+                <div class="contact-us__col">
                   <input
                     class="btn--large btn--light"
                     type="submit"
@@ -398,7 +438,7 @@
             </form>
           </section>
         </div>
-        <div class="modal__dialog-footer"></div>
+        <!--<div class="modal__dialog-footer"></div>-->
       </div>
     </aside>
     <!-- Footer start-->
@@ -472,10 +512,15 @@
         <!-- Footer message-->
         <div class="footer__message">
           <h2 class="footer__header">Отправить нам сообщение</h2>
-          <form class="footer-message__form" action="#">
+          <form id="form" class="footer-message__form" action="#" method="POST">
             <div class="footer-email">
               <div class="footer-email__email">Ваш еmail адрес*</div>
-              <input class="footer-email__input" type="email" required />
+              <input
+                class="footer-email__input"
+                type="email"
+                name="email"
+                required
+              />
             </div>
             <div class="msg">
               <div class="text">Текст сообщения *</div>
@@ -483,12 +528,27 @@
                 class="footer-email__textarea"
                 rows="2"
                 cols="25"
+                name="text"
                 required
               ></textarea>
             </div>
-            <button class="btn--darker btn--footer btn" type="submit">
-              Отправить
-            </button>
+            <div class="checkbox">
+              <input
+                id="formAgreementFooter"
+                type="checkbox"
+                name="agreement"
+                class="checkbox__input"
+                checked
+                required
+              />
+              <label for="formAgreementFooter" class="checkbox__label">
+                <span>
+                  Даю согласие на обработку персональных данных в соответствии с
+                  <a href="">политикой конфиденциальности</a>
+                </span>
+              </label>
+            </div>
+            <button class="btn--darker btn--footer btn">Отправить</button>
           </form>
         </div>
       </div>
